@@ -1,4 +1,4 @@
-# Prisma-node API
+# Prisma-Express API
 
 This is my first time using the Prisma ORM.
 I had heard that Prisma was an awesome ORM to use with TypeScript and I did not get disapointed.
