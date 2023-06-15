@@ -8,6 +8,7 @@ import helmet from 'helmet';
 import express from 'express';
 import productsRoutes from './routes/productsRoutes';
 import typesRoutes from './routes/typesRouter';
+import homeRoutes from './routes/homeRoutes';
 
 const whiteList = [
     'http://localhost:3000',
@@ -38,7 +39,7 @@ class App {
     routes() {
         this.app.use('/products', productsRoutes);
         this.app.use('/types', typesRoutes);
-	this.app.use('/', (req: express.Request, res: express.Response) => {return res.json('Ola Manino')});
+        this.app.use('/', homeRoutes);
     }
 }
 
