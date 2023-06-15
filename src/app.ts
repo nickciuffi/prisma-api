@@ -38,7 +38,7 @@ class App {
     routes() {
         this.app.use('/products', productsRoutes);
         this.app.use('/types', typesRoutes);
-	this.app.use('/', (req: express.Request, res: express.Response) => {return res.json('Ola mano')});
+	this.app.use('/', (req: express.Request, res: express.Response) => {return res.json('Ola Manino')});
     }
 }
 
